@@ -1,0 +1,109 @@
+body {
+    font-family: sans-serif;
+}
+
+.page {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Posts */
+
+.posts {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.posts-item {
+    padding: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.posts-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.posts-item--top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-item--id,
+.posts-item--created {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.posts-item--content {
+    font-size: 24px;
+}
+
+/* Post, Post new */
+
+.post,
+.post-new {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.post--top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post--id,
+.post--created {
+    font-size: 14px;
+}
+
+.post--content,
+.post-new--content {
+    font: inherit;
+    font-size: 24px;
+    padding: 10px;
+    width: 100%;
+    height: 6em;
+    box-sizing: border-box;
+    margin: 10px 0;
+    resize: none;
+}
+
+.posts--toolbar,
+.post--toolbar,
+.post-new--toolbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.posts--btn,
+.post--btn,
+.post-new--btn {
+    padding: 1em;
+    border: 1px solid;
+}
+
+.posts--btn:hover,
+.post--btn:hover,
+.post-new--btn:hover{
+    cursor: pointer;
+}
+
+.posts--btn-submit,
+.post--btn-edit,
+.post-new--btn-submit {
+    background-color: lightgreen;
+}
+
+.post--btn-reset,
+.post-new--btn-reset {
+    margin-left: 10px;
+    background-color: lightskyblue;
+}
+
+.post--btn-delete {
+    margin-left: 10px;
+    background-color: orange;
+}
